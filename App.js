@@ -44,7 +44,6 @@ const ConvertApp = ()=>{
     setErrMsg('')
   }
 
-
   function renderPieces(pieces){
     let el = <Text></Text>
     for(var i = pieces.length-1 ;i>= 0;i--){
@@ -58,13 +57,6 @@ const ConvertApp = ()=>{
         return <View style={{fontSize:22}}>{el}</View>
       }
     }
-
-    return (<View>
-      <Text>{pieces.map((p,i)=>
-      {
-        return <Text>{i}<Text>{p}</Text></Text>
-      })}</Text> 
-    </View>)
   }
 
   return (
@@ -135,12 +127,6 @@ const ConvertApp = ()=>{
   );
 }
 const styles = StyleSheet.create({
-  // container: {
-  //   flex: 1,
-  //   backgroundColor: '#fcfcf1',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
   title: {
     fontSize: 18,
     paddingBottom: 5
